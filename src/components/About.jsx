@@ -97,7 +97,7 @@ const About = () => {
                 viewport={{ once: true }}
               />
               <motion.img
-                src="/profile.png"
+                src={process.env.PUBLIC_URL + "/profile.png"}
                 alt="Muhammad Azlan Khan Profile"
                 loading="lazy"
                 width="600"

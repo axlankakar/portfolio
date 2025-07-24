@@ -281,7 +281,7 @@ const Hero = () => {
         <div ref={pinRef} className="flex justify-center items-center w-full mb-6">
           <motion.img
             ref={imgRef}
-            src="/profile.png"
+            src={process.env.PUBLIC_URL + "/profile.png"}
             alt="Muhammad Azlan Khan Profile"
             loading="lazy"
             width="320"
