@@ -89,7 +89,7 @@ This project is configured for automatic deployment to GitHub Pages. The deploym
 ### GitHub Pages Deployment
 
 1. **Automatic Deployment**: The app is automatically deployed to GitHub Pages when you push to the `main` branch
-2. **Live URL**: [https://axlankakar.github.io](https://axlankakar.github.io/portfolio)
+2. **Live URL**: [https://axlankakar.github.io/portfolio](https://axlankakar.github.io/portfolio)
 3. **Build Process**: The GitHub Actions workflow builds the React app and deploys it to the `gh-pages` branch
 
 ### Manual Deployment
