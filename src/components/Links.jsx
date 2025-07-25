@@ -397,7 +397,7 @@ const Links = () => {
           transition={{ duration: 0.8, delay: 1 }}
         >
           <p className="text-gray-400 dark:text-gray-500">
-            © 2024 Muhammad Azlan Khan. All rights reserved.
+            © 2025 Muhammad Azlan Khan. All rights reserved.
           </p>
         </motion.div>
       </div>
