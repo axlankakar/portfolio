@@ -295,30 +295,33 @@ const Hero = () => {
         {/* Centered Text Content */}
         <h1
           ref={el => textBlockRefs.current[0] = el}
-          className="text-5xl md:text-7xl lg:text-hero font-extrabold mb-2 tracking-tight text-gray-900 dark:text-white"
+          className="text-5xl md:text-7xl lg:text-hero font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white"
         >
-          Muhammad Azlan Khan
+          Muhammad Azlan<br/>Khan
         </h1>
-        <h2
-          ref={el => textBlockRefs.current[1] = el}
-          className="text-2xl md:text-3xl font-semibold mb-2 text-gray-700 dark:text-gray-300"
-        >
-          Data Scientist | DevOps Engineer
-        </h2>
         <div
           ref={el => textBlockRefs.current[2] = el}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+          className="text-3xl md:text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
         >
-          <span className="inline-block">
-            GIKI | Data Science Major | Class of 2025
-          </span>
+          Emerging Data Scientist | ML Enthusiast | Data Science & DevOps |<br/>
+          Transforming Ideas into Solutions
         </div>
-        <p
-          ref={el => textBlockRefs.current[3] = el}
-          className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed font-medium"
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
         >
-          Passionate about Data Science, DevOps, and building intelligent, scalable solutions. Experienced in Python, Power BI, Azure, Docker, and more. Explore my portfolio to see my work and experience.
-        </p>
+          <a
+            href={process.env.PUBLIC_URL + "/cv.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105"
+          >
+            View Resume
+          </a>
+          {/* ... existing contact button ... */}
+        </motion.div>
       </div>
       {/* Scroll Indicator with Pulse */}
       <motion.div

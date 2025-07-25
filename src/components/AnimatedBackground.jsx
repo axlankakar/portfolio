@@ -184,23 +184,25 @@ const AnimatedBackground = () => {
   }, [isDark]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 w-full h-full z-0 pointer-events-none select-none"
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100vw',
-        height: '100vh',
-        zIndex: 0,
-        pointerEvents: 'none',
-        userSelect: 'none',
-        background: isDark ? CANVAS_BG_NIGHT : CANVAS_BG_DAY,
-        transition: 'background 0.3s',
-      }}
-      aria-hidden="true"
-    />
+    <div className="fixed inset-0 -z-10">
+      {isDark ? (
+        <div className="w-full h-full">
+          <img
+            src={process.env.PUBLIC_URL + "/dark.jpg"}
+            alt="Dark Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ) : (
+        <div className="w-full h-full">
+          <img
+            src={process.env.PUBLIC_URL + "/white.jpg"}
+            alt="Light Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+    </div>
   );
 };
 

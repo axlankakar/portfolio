@@ -151,9 +151,16 @@ const About = () => {
               transition={{ duration: 1.1, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              I am Muhammad Azlan Khan, a driven Computer Science undergraduate at Ghulam Ishaq Khan Institute (GIKI), specializing in Data Science. My journey spans impactful roles as a Data Analyst, DevOps Engineer, and Software Engineer, where I have delivered measurable results in data analytics, automation, and scalable system design.<br/><br/>
-              With hands-on experience in Power BI, Python, Azure DevOps, Docker, and Kubernetes, I have led initiatives that improved reporting efficiency, optimized cloud infrastructure, and accelerated deployment cycles. My work is defined by a commitment to data-driven decision-making, operational excellence, and building solutions that create real business value.<br/><br/>
-              I thrive in collaborative environments and am passionate about leveraging technology to solve complex problems, enhance user experiences, and drive organizational growth. Let’s connect to explore how my skills and experience can contribute to your next project or team success.
+              I am Muhammad Azlan Khan, an aspiring Data Scientist and final year Computer Science student at Ghulam Ishaq Khan Institute (GIKI). My academic journey has been focused on Data Science, Machine Learning, and their practical applications in solving real-world problems.<br/><br/>
+              
+              My expertise spans across various domains of Data Science and ML, including:
+              • Data Analysis & Visualization using Python, Power BI, and advanced statistical methods
+              • Machine Learning model development and deployment
+              • Real-time data processing pipelines and ETL workflows
+              • Cloud infrastructure and DevOps practices for ML systems
+              • Full-stack development for data-driven applications<br/><br/>
+              
+              I've worked on diverse projects ranging from cloud-based chatbots and real-time stock market analysis to air quality monitoring systems and healthcare applications. My approach combines technical expertise with a strong focus on delivering practical, scalable solutions that drive meaningful insights and business value.
             </motion.p>
 
             {/* CTA Button */}

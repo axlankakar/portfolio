@@ -65,6 +65,13 @@ const Links = () => {
       bgColor: 'hover:bg-blue-900/20'
     },
     {
+    name: 'GitHub',
+    icon: FaGithub,
+    url: 'https://github.com/axlankakar', // Replace with your GitHub URL
+    color: 'hover:text-gray-400',
+    bgColor: 'hover:bg-gray-900/20'
+    },
+    {
       name: 'Email',
       icon: FaEnvelope,
       url: 'mailto:axlan.exe@gmail.com',

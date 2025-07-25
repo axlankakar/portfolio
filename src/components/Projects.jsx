@@ -13,8 +13,9 @@ const Projects = () => {
 
   const categories = [
     { id: 'all', name: 'All' },
-    { id: 'web', name: 'Web Apps' },
     { id: 'ai', name: 'AI & ML' },
+    { id: 'data', name: 'Data Engineering' },
+    { id: 'web', name: 'Web Apps' },
     { id: 'game', name: 'Games' },
     { id: 'research', name: 'Research' }
   ];
@@ -22,82 +23,119 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'United Chatbot',
-      description: 'An intelligent chatbot system designed to provide seamless customer support and automated responses using advanced NLP techniques.',
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop',
+      title: 'Cloud Chatbot',
+      description: 'An intelligent chatbot system leveraging cloud technologies for automated customer support and interactions.',
+      image: process.env.PUBLIC_URL + '/cloud.jpg',
       category: 'ai',
-      technologies: ['Python', 'NLP', 'Machine Learning', 'Flask'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/United-chatbot'
+      technologies: ['Python', 'Cloud Computing', 'NLP', 'Machine Learning'],
+      github: 'https://github.com/axlankakar/CloudChatbot-project'
     },
     {
       id: 2,
-      title: 'Sentiment Dashboard',
-      description: 'A comprehensive sentiment analysis dashboard that processes and visualizes emotional data from various sources with real-time analytics.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      category: 'ai',
-      technologies: ['React', 'Python', 'D3.js', 'Sentiment Analysis'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/sentiment-dashboard'
+      title: 'Real-Time Stock Market Pipeline',
+      description: 'A comprehensive data processing pipeline for real-time stock market data analysis and visualization.',
+      image: process.env.PUBLIC_URL + '/Datapipeline.png',
+      category: 'data',
+      technologies: ['Apache Kafka', 'Apache Spark', 'PostgreSQL', 'Docker'],
+      github: 'https://github.com/axlankakar/Real-TimeStockMarket_DataProcessingPipeline'
     },
     {
       id: 3,
-      title: 'Flappy Bird Game',
-      description: 'A modern recreation of the classic Flappy Bird game with enhanced graphics, smooth animations, and responsive controls.',
-      image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop',
-      category: 'game',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Canvas API'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/flappybirdgame'
+      title: 'Air Quality Monitoring System',
+      description: 'IoT-based air quality monitoring system with real-time data processing and analytics pipeline.',
+      image: process.env.PUBLIC_URL + '/datapipeline2.png',
+      category: 'data',
+      technologies: ['IoT', 'Data Engineering', 'Python', 'Cloud'],
+      github: 'https://github.com/axlankakar/AirQualityMonitoringSystem_Dataengineering'
     },
     {
       id: 4,
-      title: 'DE Project',
-      description: 'A data engineering project focused on building robust data pipelines, ETL processes, and data warehousing solutions.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+      title: 'Islamic Banking App',
+      description: 'A comprehensive Islamic banking application with Shariah-compliant financial services and transactions.',
+      image: process.env.PUBLIC_URL + '/islamic.jpg',
       category: 'web',
-      technologies: ['Python', 'Apache Spark', 'Docker', 'AWS'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/DE-project'
+      technologies: ['React', 'Node.js', 'MongoDB', 'Islamic Finance'],
+      github: 'https://github.com/1ordmk/BAnking-App'
     },
     {
       id: 5,
-      title: 'Chess Game',
-      description: 'A fully functional chess game with AI opponent, move validation, and beautiful UI featuring classic chess pieces and board.',
-      image: 'https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=600&h=400&fit=crop',
-      category: 'game',
-      technologies: ['JavaScript', 'React', 'Chess.js', 'AI Algorithms'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/chess'
+      title: 'Psycho Clinic Management',
+      description: 'A clinic management system specialized for psychological healthcare facilities.',
+      image: process.env.PUBLIC_URL + '/pyscho.jpg',
+      category: 'web',
+      technologies: ['Full Stack', 'Healthcare', 'Database', 'UI/UX'],
+      github: 'https://github.com/axlankakar/Clinic-management-system'
     },
     {
       id: 6,
-      title: 'IR Project',
-      description: 'An information retrieval system that implements advanced search algorithms and document processing techniques.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+      title: 'United Chatbot',
+      description: 'An intelligent chatbot system designed to provide seamless customer support and automated responses using advanced NLP techniques.',
+      image: process.env.PUBLIC_URL + '/chatbot.jpg',
       category: 'ai',
-      technologies: ['Python', 'Information Retrieval', 'Search Algorithms', 'NLP'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/IR-project'
+      technologies: ['Python', 'NLP', 'Machine Learning', 'Flask'],
+      github: 'https://github.com/Mortaza76/United-chatbot'
     },
     {
       id: 7,
-      title: 'FYP Main',
-      description: 'My final year project showcasing innovative solutions and comprehensive research in advanced software development.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-      category: 'research',
-      technologies: ['Full Stack', 'Research', 'Innovation', 'Advanced Tech'],
-      link: '#',
-      github: 'https://github.com/Mortaza76/FYP-main'
+      title: 'Sentiment Dashboard',
+      description: 'A comprehensive sentiment analysis dashboard that processes and visualizes emotional data from various sources with real-time analytics.',
+      image: process.env.PUBLIC_URL + '/dashboard.jpg',
+      category: 'ai',
+      technologies: ['React', 'Python', 'D3.js', 'Sentiment Analysis'],
+      github: 'https://github.com/Mortaza76/sentiment-dashboard'
     },
     {
       id: 8,
-      title: 'DevOps Final',
+      title: 'Flappy Bird Game',
+      description: 'A modern recreation of the classic Flappy Bird game with enhanced graphics, smooth animations, and responsive controls.',
+      image: process.env.PUBLIC_URL + '/bird.jpg',
+      category: 'game',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Canvas API'],
+      github: 'https://github.com/Mortaza76/flappybirdgame'
+    },
+    {
+      id: 9,
+      title: 'Data Engineering Project',
+      description: 'A data engineering project focused on building robust data pipelines, ETL processes, and data warehousing solutions.',
+      image: process.env.PUBLIC_URL + '/data.jpg',
+      category: 'data',
+      technologies: ['Python', 'Apache Spark', 'Docker', 'AWS'],
+      github: 'https://github.com/Mortaza76/DE-project'
+    },
+    {
+      id: 10,
+      title: 'Chess Game',
+      description: 'A fully functional chess game with AI opponent, move validation, and beautiful UI featuring classic chess pieces and board.',
+      image: process.env.PUBLIC_URL + '/chess.jpg',
+      category: 'game',
+      technologies: ['JavaScript', 'React', 'Chess.js', 'AI Algorithms'],
+      github: 'https://github.com/Mortaza76/chess'
+    },
+    {
+      id: 11,
+      title: 'Information Retrieval System',
+      description: 'An information retrieval system that implements advanced search algorithms and document processing techniques.',
+      image: process.env.PUBLIC_URL + '/information.jpg',
+      category: 'ai',
+      technologies: ['Python', 'Information Retrieval', 'Search Algorithms', 'NLP'],
+      github: 'https://github.com/Mortaza76/IR-project'
+    },
+    {
+      id: 12,
+      title: 'Final Year Project',
+      description: 'My final year project showcasing innovative solutions and comprehensive research in advanced software development.',
+      image: process.env.PUBLIC_URL + '/fyp.jpg',
+      category: 'research',
+      technologies: ['Full Stack', 'Research', 'Innovation', 'Advanced Tech'],
+      github: 'https://github.com/Mortaza76/FYP-main'
+    },
+    {
+      id: 13,
+      title: 'DevOps Pipeline',
       description: 'A comprehensive DevOps project demonstrating CI/CD pipelines, containerization, and cloud infrastructure automation.',
-      image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop',
+      image: process.env.PUBLIC_URL + '/devops.jpg',
       category: 'web',
       technologies: ['Docker', 'Kubernetes', 'Jenkins', 'AWS'],
-      link: '#',
       github: 'https://github.com/Mortaza76/DEVops-final'
     }
   ];
@@ -251,7 +289,7 @@ const Projects = () => {
                 {/* Project Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={project.image + (project.image.includes('unsplash.com') ? '&auto=format&fit=crop&w=600&q=80' : '')}
+                    src={project.image}
                     alt={project.title}
                     loading="lazy"
                     width="600"
@@ -262,17 +300,6 @@ const Projects = () => {
                   {/* Overlay with Links */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex space-x-4">
-                      <motion.a
-                        href={project.link}
-                        className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-300 cursor-pointer select-none icon-animate"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        data-interactive="true"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                      </motion.a>
                       <motion.a
                         href={project.github}
                         target="_blank"
